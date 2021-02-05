@@ -1,0 +1,33 @@
+package desafios;
+
+import java.util.Scanner;
+
+//import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+
+		System.out.println("Digite uma nota:");
+		Scanner entrada = new Scanner(System.in);
+		Integer notafinal = entrada.nextInt();
+		String verificador = notafinal.toString(notafinal);
+
+		String saida = "sair";
+		double contador = 0;
+		double total = 0;
+
+		while (!saida.equalsIgnoreCase(verificador)) {
+			if (notafinal >= 0 && notafinal <= 10) {
+				total += notafinal;
+				contador++;
+				notafinal = entrada.nextInt();
+			} else {
+				System.out.println("A nota digitada não é válida!");
+			}
+		}
+
+		entrada.close();
+
+	}
+}

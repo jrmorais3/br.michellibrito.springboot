@@ -1,0 +1,43 @@
+package testeUnimed;
+
+public class Node {
+
+	private String valor;
+	private Node esquerda;
+	private Node direita;
+
+	public Node(String valor, Node esquerda, Node direita) {
+		this.valor = valor;
+		this.esquerda = esquerda;
+		this.direita = direita;
+	}
+
+	public Node(String valor) {
+		this.valor = valor;
+	}
+
+	public Node getEsquerda() {
+		return esquerda;
+	}
+
+	public void setEsquerda(Node esquerda) {
+		this.esquerda = esquerda;
+	}
+
+	public Node getDireita() {
+		return direita;
+	}
+
+	public void setDireita(Node direita) {
+		this.direita = direita;
+	}
+
+	public String getValor() {
+		return valor;
+	}
+
+	public void setValor(String valor) {
+		this.valor = valor;
+	}
+
+}

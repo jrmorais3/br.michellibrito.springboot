@@ -1,0 +1,102 @@
+package desafios;
+
+import java.util.Scanner;
+
+public class Jr_DesafiosConceitosBasicos {
+
+	public static void main(String[] args) {
+
+		// 1) Criar um programa que leia a temperatura em Celsius e converta para
+		// Fahrenheit.
+		// °F = °C × 1, 8 + 32
+
+		/*
+		 * Scanner entrada = new Scanner(System.in);
+		 * System.out.println("Digite o valor em Celsius:"); double celsius =
+		 * entrada.nextDouble(); double fahrenheit = (celsius * 1.8) + 32;
+		 * System.out.println("O valor em Fahrenheit é: " + fahrenheit);
+		 * entrada.close();
+		 */
+
+		// 2) Criar um programa que leia a temperatura em Fahrenheit e converta para
+		// Celsius.
+		// °C = (°F -32) / 1, 8
+
+		/*
+		 * Scanner entrada = new Scanner(System.in);
+		 * System.out.println("Digite o valor em Fahrenheit:"); double fahrenheit =
+		 * entrada.nextDouble(); double celsius = (fahrenheit - 32) / 1.8;
+		 * System.out.println("O valor em Celsius é: " + celsius); entrada.close();
+		 */
+
+		// 3) Criar um programa que leia o peso e a altura do usuário e imprima no
+		// console o IMC.
+		// É calculado dividindo o peso (em kg) pela altura ao quadrado (em metros).
+
+		/*
+		 * Scanner entrada = new Scanner(System.in);
+		 * System.out.println("Digite seu peso:"); double peso = entrada.nextDouble();
+		 * 
+		 * System.out.println("Digite sua altura:"); double altura =
+		 * entrada.nextDouble();
+		 * 
+		 * double IMC = peso / (altura*altura); System.out.println("Seu IMC é de: " +
+		 * IMC);
+		 * 
+		 * entrada.close();
+		 */
+
+		// 4) Criar um programa que leia um valor e apresente os resultados ao quadrado
+		// e ao cubo do valor.
+
+		/*
+		 * Scanner entrada = new Scanner(System.in);
+		 * System.out.println("Digite o valor a ser calculado:"); double valor =
+		 * entrada.nextDouble();
+		 * 
+		 * double valor2 = Math.pow(valor, 2); double valor3 = Math.pow(valor, 3);
+		 * 
+		 * System.out.println("O valor ao quadrado é: " + valor2);
+		 * System.out.println("O valor ao cubo é: " + valor3);
+		 * 
+		 * entrada.close();
+		 */
+
+		// 5) Criar um programa que leia o valor da base e da altura de um triângulo e
+		// calcule a área.
+
+		/*
+		 * Scanner entrada = new Scanner(System.in);
+		 * 
+		 * System.out.println("Digite a base do triângulo: "); double base =
+		 * entrada.nextDouble();
+		 * 
+		 * System.out.println("Digite a altura do triângulo: "); double altura =
+		 * entrada.nextDouble();
+		 * 
+		 * double area = (base*altura)/2;
+		 * System.out.println("A área do triângulo é de: "+area);
+		 */
+
+		// 6) Criar um programa que resolve equações do segundo grau (ax2 + bx + c = 0)
+		// utilizando a fórmula de Bhaskara. Use como exemplo a = 1, b = 12 e c = -13.
+		// Encontre o delta
+
+		/*
+		double a = 1;
+		double b = 12;
+		double c = -13;
+
+		double delta = Math.pow(b, 2) - 4 * a * c;
+		System.out.println("O valor do delta é: " + delta);
+		double equacaopositiva = b + Math.sqrt(delta);
+		equacaopositiva = equacaopositiva / (2 * a);
+
+		double equacaonegativa = -b + Math.sqrt(delta);
+		equacaonegativa = equacaonegativa / (2 * a);
+
+		System.out.println("O resultado da equacao é: " + equacaopositiva + " ou " + equacaonegativa);
+		*/
+	}
+
+}

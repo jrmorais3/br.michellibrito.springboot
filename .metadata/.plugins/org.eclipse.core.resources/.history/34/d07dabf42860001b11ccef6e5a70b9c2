@@ -1,0 +1,54 @@
+package desafios;
+
+import java.util.Scanner;
+
+public class DesafioEstruturasDeControle {
+
+	public static void main(String[] args) {
+//1. Criar um programa que receba um número e verifique se ele está entre 0 e 10 e é par;
+
+		/*
+		 * Scanner entrada = new Scanner(System.in);
+		 * System.out.println("Digite o valor a ser verificado"); Integer valor =
+		 * entrada.nextInt();
+		 * 
+		 * if (valor > 10 || valor < 0) {
+		 * System.out.println("O valor não dentro da seleção de 0-10"); } else { for
+		 * (int i = 0; i <= 10; i++) { if (valor == i && valor % 2 == 0) {
+		 * System.out.println("O valor é " + i + " e ele é par!"); } else if (valor == i
+		 * && valor % 2 == 1) { System.out.println("O valor é " + i + " e não é par!");
+		 * }
+		 * 
+		 * } } entrada.close();
+		 * }
+		 */
+
+//		2. Criar um programa informa se o ano atual é um ano bissexto;
+		
+		/*
+			Para determinar se um ano é bissexto, execute estas etapas:
+			1 - Se o ano for uniformemente divisível por 4, vá para a etapa 2. Caso contrário, vá para a etapa 5.
+			2 - Se o ano for uniformemente divisível por 100, vá para a etapa 3. Caso contrário, vá para a etapa 4.
+			3 - Se o ano for uniformemente divisível por 400, vá para a etapa 4. Caso contrário, vá para a etapa 5.
+			4 - O ano é bissexto (tem 366 dias).
+			5 - O ano não é um ano bissexto (tem 365 dias).
+		*/
+		
+		Scanner entrada = new Scanner(System.in);
+		int anoBissexto = entrada.nextInt();
+		
+		
+//		3. Criar um programa que receba duas notas parciais, calcular a média final. Se a nota do aluno for maior ou igual a 7.0 imprime no console "Aprovado", se a nota for menor que 7.0 e maior do que 4.0 imprime no console "Recuperação", caso contrário imprime no console "Reprovado".
+//
+//		4. Criar um programa que receba um número e diga se ele é um número primo.
+//
+//		5. Refatorar o exercício 04, utilizando a estrutura switch.
+//
+//		6. Jogo da adivinhação: Tentar adivinhar um número entre 0 - 100. Armazene um numero aleatório em uma variável. O Jogador tem 10 tentativas para adivinhar o número gerado. Ao final de cada tentativa, imprima a quantidade de tentativas restantes, e imprima se o número inserido é maior ou menor do que o número armazenado.
+//
+//		7. Criar um programa que enquanto estiver recebendo números positivos, imprime no console a soma dos números inseridos, caso receba um número negativo, encerre o programa. Tente utilizar a estrutura do while.
+//
+//		8. Criar um programa que receba uma palavra e imprime no console letra por letra.
+//
+//		9. Crie um programa que recebe 10 valores e ao final imprima o maior número.
+//}

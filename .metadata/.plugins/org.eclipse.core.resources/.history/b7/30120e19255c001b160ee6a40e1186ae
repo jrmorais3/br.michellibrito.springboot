@@ -1,0 +1,22 @@
+package desafios;
+
+import javax.swing.JOptionPane;
+
+public class DesafioWhile {
+
+	public static void main(String[] args) {
+		
+		String nota = JOptionPane.showInputDialog("Digite uma nota");
+		
+		String saida = "sair";
+		double contador = 0;
+		double total = 0;
+		
+//		while(!saida.equalsIgnoreCase(saida)) {
+//			if (condition) {
+//				
+//			}
+		}
+		
+	}
+}

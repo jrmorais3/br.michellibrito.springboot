@@ -1,0 +1,63 @@
+package testeUnimed;
+
+import java.awt.Component;
+
+import javax.swing.JOptionPane;
+
+public class Tree {
+
+	protected Node root;
+
+	public Tree() {
+		root = null;
+	}
+
+	public Node init() {
+		final String ROOT = "Massa";
+		final String LEFT = "Lasanha";
+		final String RIGHT = "Bolo de Chocolate";
+
+		Node childLeft = new Node(LEFT, null, null);
+		Node childRight = new Node(RIGHT, null, null);
+
+		root = new Node(ROOT, childLeft, childRight);
+
+		return root;
+	}
+
+	public boolean askQuestion(String prompt) {
+
+		String answer = null;
+		Component frame = null;
+
+		int i = JOptionPane.showConfirmDialog(frame, prompt, "Confirm", JOptionPane.YES_NO_OPTION);
+
+		if (i == 0) {
+			answer = "Y";
+		} else if (i == 1) {
+			answer = "N";
+		}
+
+		return answer.startsWith("Y");
+
+	}
+
+	public void play(Node node) {
+		JOptionPane.showMessageDialog(null, "Pense num prato que gosta", "SQ Tech", JOptionPane.INFORMATION_MESSAGE);
+
+		while (!node.isLeaf()) {
+			if (askQuestion("O prato que você pensou é " + node.getValue() + "?")) {
+				node = node.getLeft();
+			} else {
+				node = node.getRight();
+			}
+			
+			if (!askQuestion("O prato que você pensou é "+node.getValue()+"?")) {
+				addNodes(node);
+			} else {
+
+			}
+		}
+	}
+
+}

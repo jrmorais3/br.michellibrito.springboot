@@ -1,0 +1,148 @@
+package desafios;
+
+import java.util.Scanner;
+
+public class DesafioEstruturasDeControle {
+
+	/*
+	 * public static void main(String[] args) { //1. Criar um programa que receba um
+	 * número e verifique se ele está entre 0 e 10 e é par;
+	 * 
+	 * 
+	 * Scanner entrada = new Scanner(System.in);
+	 * System.out.println("Digite o valor a ser verificado"); Integer valor =
+	 * entrada.nextInt();
+	 * 
+	 * if (valor > 10 || valor < 0) {
+	 * System.out.println("O valor não dentro da seleção de 0-10"); } else { for
+	 * (int i = 0; i <= 10; i++) { if (valor == i && valor % 2 == 0) {
+	 * System.out.println("O valor é " + i + " e ele é par!"); } else if (valor == i
+	 * && valor % 2 == 1) { System.out.println("O valor é " + i + " e não é par!");
+	 * }
+	 * 
+	 * } } entrada.close(); } }
+	 *
+	 */
+
+//	public static void main(String[] args) {
+//
+//// 		2. Criar um programa informa se o ano atual é um ano bissexto;
+//		Scanner entrada = new Scanner(System.in);
+//		System.out.println("Digite o ano a ser validado");
+//		int anoBissexto = entrada.nextInt();
+//
+//		if (anoBissexto % 4 == 0) {
+//			System.out.println("O ano " + anoBissexto + " é bissexto!");
+//		} else {
+//			System.out.println("O ano " + anoBissexto + " não é bissexto!");
+//
+//		}
+//
+//		entrada.close();
+//
+//	}
+
+//	public static void main(String[] args) {
+////		3. Criar um programa que receba duas notas parciais, calcular a média final. Se a nota do aluno for maior ou igual a 7.0 imprime no console "Aprovado", 
+////		se a nota for menor que 7.0 e maior do que 4.0 imprime no console "Recuperação", caso contrário imprime no console "Reprovado".
+//
+//		Scanner entrada = new Scanner(System.in);
+//
+//		System.out.println("Digite a primeira nota");
+//		double nota1 = entrada.nextDouble();
+//
+//		System.out.println("Digite a segunda nota");
+//		double nota2 = entrada.nextDouble();
+//		
+//		double media = (nota1+nota2)/2;
+//		
+//		if (media>=7.0) {
+//			System.out.println("Você foi aprovado com média "+media);
+//		} else if(media>4.0 && media<7.0) {
+//			System.out.println("Você obteve média "+media+" e por isso está de recuperação!");
+//		} else {
+//			System.out.println("Você foi reprovado com media "+media);
+//		}
+//		entrada.close();
+//	}
+
+//	public static void main(String[] args) {
+////		4. Criar um programa que receba um número e diga se ele é um número primo.
+//
+//		Scanner entrada = new Scanner(System.in);
+//
+//		System.out.println("Digite o numero a ser verificado");
+//		int valor = entrada.nextInt();
+//		int primo = 0;
+//
+//		for (int i = 2; i < valor; i++) {
+//			if (valor % i == 0) {
+//				primo++;
+//			}
+//		}
+//
+//		if (primo == 0) {
+//			System.out.println("O valor " + valor + " é um número primo");
+//		} else {
+//			System.out.println("O valor " + valor + " não é um número primo");
+//		}
+//
+//		entrada.close();
+//	}
+//}
+
+//	public static void main(String[] args) {
+////		5. Refatorar o exercício 04, utilizando a estrutura switch.
+//
+//		Scanner entrada = new Scanner(System.in);
+//
+//		System.out.println("Digite o numero a ser verificado");
+//		int valor = entrada.nextInt();
+//		int primo = 0;
+//
+//		for (int i = 2; i < valor; i++) {
+//			if (valor % i == 0) {
+//				primo++;
+//			}
+//		}
+//
+//		switch (primo) {
+//		case 0:
+//			System.out.println("O valor " + valor + " é um número primo");
+//			break;
+//
+//		default:
+//			System.out.println("O valor " + valor + " não é um número primo");
+//		}
+//		
+//		entrada.close();
+//		
+//	}
+//
+//}
+
+//		6. Jogo da adivinhação: Tentar adivinhar um número entre 0 - 100. Armazene um numero aleatório em uma variável. 
+//		O Jogador tem 10 tentativas para adivinhar o número gerado. Ao final de cada tentativa, imprima a quantidade de 
+//		tentativas restantes, e imprima se o número inserido é maior ou menor do que o número armazenado.
+	public static void main(String[] args) {
+		
+		Scanner entrada = new Scanner(System.in);
+		System.out.println("Digite o valor a ser advinhado");
+		int valor = entrada.nextInt();
+		
+//		for (int i = 0; i < 100; i++) {
+//			
+//		}
+		
+		
+		entrada.close();
+	
+	}
+		
+	
+//
+//		7. Criar um programa que enquanto estiver recebendo números positivos, imprime no console a soma dos números inseridos, caso receba um número negativo, encerre o programa. Tente utilizar a estrutura do while.
+//
+//		8. Criar um programa que receba uma palavra e imprime no console letra por letra.
+//
+//		9. Crie um programa que recebe 10 valores e ao final imprima o maior número.

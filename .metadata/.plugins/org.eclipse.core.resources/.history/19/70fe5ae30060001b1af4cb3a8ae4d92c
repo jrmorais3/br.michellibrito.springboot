@@ -1,0 +1,29 @@
+package testeUnimed;
+
+public class Tree {
+	
+	protected Node root;
+
+	public Tree() {
+		root = null;
+	}
+	
+	public Node init() {
+		final String ROOT = "Massa";
+		final String LEFT = "Lasanha";
+		final String RIGHT = "Bolo de Chocolate";
+		
+		Node childLeft = new Node(LEFT,null,null);
+		Node childRight = new Node(RIGHT,null,null);
+		
+		root = new Node(ROOT, childLeft, childRight);
+		
+		return root;
+	}
+	
+	
+	
+	
+	
+
+}
