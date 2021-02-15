@@ -90,9 +90,7 @@ public class EventoController {
 		cr.delete(convidado);
 		
 		Evento evento = convidado.getEvento();
-		long codigoLong = evento.getCodigo();
-		String codigo = "" + codigoLong;
-		return "redirect:/" + codigo;
+		long condigoLong = evento.getCodigo();
 	}
 	
 	
